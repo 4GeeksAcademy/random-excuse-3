@@ -19,7 +19,7 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  var word1 = who[Math.floor(Math.random() * who.length)];
+  let word1 = who[Math.floor(Math.random() * who.length)];
   console.log(word1);
   let word2 = action[Math.floor(Math.random() * action.length)];
   console.log(word2);
