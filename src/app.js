@@ -19,15 +19,22 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let word1 = who[Math.floor(Math.random() * who.length)];
-  console.log(word1);
-  let word2 = action[Math.floor(Math.random() * action.length)];
-  console.log(word2);
-  let word3 = what[Math.floor(Math.random() * what.length)];
-  console.log(word3);
-  let word4 = when[Math.floor(Math.random() * when.length)];
-  console.log(word4);
+  var whoVariable = who[Math.floor(Math.random() * who.length)];
+  console.log(whoVariable);
+  let actionVariable = action[Math.floor(Math.random() * action.length)];
+  console.log(actionVariable);
+  let whatVariable = what[Math.floor(Math.random() * what.length)];
+  console.log(whatVariable);
+  let whenVariable = when[Math.floor(Math.random() * when.length)];
+  console.log(whenVariable);
 
-  let quote = word1 + " " + word2 + " " + word3 + " " + word4;
+  let quote =
+    whoVariable +
+    " " +
+    actionVariable +
+    " " +
+    whatVariable +
+    " " +
+    whenVariable;
   document.getElementById("excuse").innerHTML = quote;
 };
